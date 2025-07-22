@@ -28,9 +28,9 @@ class GeoServiceImplTest {
         Assertions.assertEquals(exсpextedLocation, locationResult);
     }
     public static Stream<Arguments> factory() {
-        Location locationNewYorkFull = new Location("New York", Country.USA, " 5th Avenue", 1);
+        Location locationNewYorkFull = new Location("New York", Country.USA, " 10th Avenue", 32);
         Location location = new Location(null, null, null, 0);
-        Location locationMoscowFull = new Location("Moscow", Country.RUSSIA, "Lenina", 1);
+        Location locationMoscowFull = new Location("Moscow", Country.RUSSIA, "Lenina", 15);
         Location locationNewYork = new Location("New York", Country.USA, null,  0);
         Location locationMoscow = new Location("Moscow", Country.RUSSIA, null, 0);
         return Stream.of(
